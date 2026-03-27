@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedHopeFund | Feeding Hearts & Filling Needs</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2e7d32; /* Green for hope */
+            --secondary: #f57c00; /* Orange for warmth */
+            --light: #f9f9f9;
+            --dark: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body { line-height: 1.6; color: var(--dark); background-color: var(--light); }
+
+        /* Navigation */
+        nav { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        .nav-links a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 500; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .btn { padding: 12px 30px; border: none; border-radius: 25px; cursor: pointer; font-size: 1rem; text-decoration: none; transition: 0.3s; }
+        .btn-primary { background: var(--secondary); color: white; }
+        .btn-primary:hover { background: #e65100; }
+
+        /* Impact Sections */
+        .container { padding: 5rem 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+
+        /* Donation Section */
+        .donate-bar { background: var(--primary); color: white; padding: 4rem 10%; text-align: center; }
+
+        footer { background: #222; color: white; text-align: center; padding: 2rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><i class="fas fa-hand-holding-heart"></i> FeedHopeFund</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#impact">Our Work</a>
+            <a href="#donate" class="btn btn-primary" style="padding: 8px 20px;">Donate Now</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Small Acts, Big Changes</h1>
+        <p>Providing food, clothing, and joy to those who need it most.</p><br>
+        <a href="#impact" class="btn btn-primary">See Our Impact</a>
+    </header>
+
+    <section class="container" id="impact">
+        <h2>What We Do</h2>
+        <p>At FeedHopeFund, we believe basic necessities are a human right.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-utensils"></i>
+                <h3>Nutritious Meals</h3>
+                <p>We serve over 500 hot meals daily to homeless shelters and local communities.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Warm Clothing</h3>
+                <p>Distributing blankets and clothes to protect families during harsh winters.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-gift"></i>
+                <h3>Holiday Gifts</h3>
+                <p>Every child deserves a smile. We provide toys and educational gifts annually.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="donate-bar" id="donate">
+        <h2>Ready to make a difference?</h2>
+        <p style="margin-bottom: 2rem;">Your $10 donation can feed a family of four for a day.</p>
+        <a href="#" class="btn btn-primary" style="background: white; color: var(--primary); font-weight: bold;">Give Hope Today</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FeedHopeFund NGO. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
